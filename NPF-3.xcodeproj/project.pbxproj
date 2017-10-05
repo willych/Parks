@@ -12,6 +12,12 @@
 		C41B72601DD29A1C00E69E9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C41B725E1DD29A1C00E69E9D /* Main.storyboard */; };
 		C41B72621DD29A1C00E69E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C41B72611DD29A1C00E69E9D /* Assets.xcassets */; };
 		C41B72651DD29A1C00E69E9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C41B72631DD29A1C00E69E9D /* LaunchScreen.storyboard */; };
+		C41B726E1DD29A3A00E69E9D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41B726D1DD29A3A00E69E9D /* CoreLocation.framework */; };
+		C41B72701DD29A4100E69E9D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41B726F1DD29A4100E69E9D /* MapKit.framework */; };
+		C41B72721DD29A8E00E69E9D /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = C41B72711DD29A8E00E69E9D /* data.plist */; };
+		C41B72741DD29A9400E69E9D /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B72731DD29A9400E69E9D /* Park.swift */; };
+		C41B72761DD29F6600E69E9D /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B72751DD29F6600E69E9D /* Place.swift */; };
+		C41B72781DD2ACA300E69E9D /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B72771DD2ACA300E69E9D /* Places.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		C41B72611DD29A1C00E69E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C41B72641DD29A1C00E69E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C41B72661DD29A1C00E69E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C41B726D1DD29A3A00E69E9D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C41B726F1DD29A4100E69E9D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C41B72711DD29A8E00E69E9D /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		C41B72731DD29A9400E69E9D /* Park.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
+		C41B72751DD29F6600E69E9D /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		C41B72771DD2ACA300E69E9D /* Places.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C41B72701DD29A4100E69E9D /* MapKit.framework in Frameworks */,
+				C41B726E1DD29A3A00E69E9D /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +54,7 @@
 			children = (
 				C41B72591DD29A1C00E69E9D /* NPF-3 */,
 				C41B72581DD29A1C00E69E9D /* Products */,
+				C41B726C1DD29A3A00E69E9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,9 +74,22 @@
 				C41B725E1DD29A1C00E69E9D /* Main.storyboard */,
 				C41B72611DD29A1C00E69E9D /* Assets.xcassets */,
 				C41B72631DD29A1C00E69E9D /* LaunchScreen.storyboard */,
+				C41B72711DD29A8E00E69E9D /* data.plist */,
+				C41B72731DD29A9400E69E9D /* Park.swift */,
 				C41B72661DD29A1C00E69E9D /* Info.plist */,
+				C41B72751DD29F6600E69E9D /* Place.swift */,
+				C41B72771DD2ACA300E69E9D /* Places.swift */,
 			);
 			path = "NPF-3";
+			sourceTree = "<group>";
+		};
+		C41B726C1DD29A3A00E69E9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C41B726F1DD29A4100E69E9D /* MapKit.framework */,
+				C41B726D1DD29A3A00E69E9D /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +124,7 @@
 				TargetAttributes = {
 					C41B72561DD29A1B00E69E9D = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = FT5TU5KEM8;
+						DevelopmentTeam = F3M6N88MH8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,6 +154,7 @@
 			files = (
 				C41B72651DD29A1C00E69E9D /* LaunchScreen.storyboard in Resources */,
 				C41B72621DD29A1C00E69E9D /* Assets.xcassets in Resources */,
+				C41B72721DD29A8E00E69E9D /* data.plist in Resources */,
 				C41B72601DD29A1C00E69E9D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C41B72781DD2ACA300E69E9D /* Places.swift in Sources */,
 				C41B725D1DD29A1C00E69E9D /* ViewController.swift in Sources */,
+				C41B72741DD29A9400E69E9D /* Park.swift in Sources */,
 				C41B725B1DD29A1C00E69E9D /* AppDelegate.swift in Sources */,
+				C41B72761DD29F6600E69E9D /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FT5TU5KEM8;
+				DEVELOPMENT_TEAM = F3M6N88MH8;
 				INFOPLIST_FILE = "NPF-3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.choi.willy.NPF-3";
@@ -274,7 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FT5TU5KEM8;
+				DEVELOPMENT_TEAM = F3M6N88MH8;
 				INFOPLIST_FILE = "NPF-3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.choi.willy.NPF-3";
@@ -302,6 +334,7 @@
 				C41B726B1DD29A1C00E69E9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
